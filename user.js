@@ -3,6 +3,7 @@
 // кроме того, возможно отколючение мультипроцессинга через переменную MOZ_FORCE_DISABLE_E10S=1, но лис начинает падать (например, при невалидном сертификате сайта)
 user_pref("browser.tabs.remote.separateFileUriProcess", false);
 user_pref("browser.tabs.remote.separatePrivilegedContentProcess", false);
+user_pref("browser.tabs.remote.separatePrivilegedMozillaWebContentProcess", false);
 user_pref("extensions.webextensions.remote", false);
 user_pref("dom.largeAllocationHeader.enabled", false);
 user_pref("layers.gpu-process.enabled", false);
@@ -17,13 +18,13 @@ user_pref("intl.accept_languages", "ru,ru-ru,en-us,en");
 user_pref("intl.locale.requested", "ru");
 
 // отключение запроса на about:config
-user_pref("general.aboutConfig.showWarning", false);
+user_pref("browser.aboutConfig.showWarning", false);
 
 // WebRender
 user_pref("gfx.webrender.all", true);
 
 // включаем управление тачскрином (еще нужен MOZ_USE_XINPUT2=1 на линуксах)
-user_pref("dom.w3c_touch_events.enabled", 1);
+user_pref("dom.w3c_touch_events.enabled", 2);
 
 // масштаб интерфейса
 user_pref("layout.css.devPixelsPerPx", "1");
@@ -84,25 +85,10 @@ user_pref("browser.safebrowsing.malware.enabled", false);
 user_pref("browser.safebrowsing.phishing.enabled", false);
 
 // повышаем приватность
-user_pref("network.cookie.cookieBehavior", 4);
 user_pref("privacy.donottrackheader.enabled", true);
-user_pref("browser.contentblocking.category", "custom");
 user_pref("privacy.trackingprotection.enabled", true);
 user_pref("privacy.trackingprotection.cryptomining.enabled", true);
 user_pref("privacy.trackingprotection.fingerprinting.enabled", true);
-user_pref("privacy.resistFingerprinting", true);
-// список второго уровня блокирует гуглокапчу, используем список первого уровня
-user_pref("urlclassifier.trackingTable", "");
-//user_pref("urlclassifier.trackingTable", "moztest-track-simple,base-track-digest256,content-track-digest256");
-
-// DoH + ESNI
-// ESNI зависит от DoH, т. к. ресолверы не всех систем (не будем указывать пальцем, но скажу, что эту систему создала компания, название которой начинается на "Micro" и заканчивается на "soft") могут выдавать записи типа TXT
-// лично у меня РКН банит ESNI и любой сайт, хостящийся на Cloudflare, не грузится
-user_pref("network.trr.mode", 2);
-//user_pref("network.security.esni.enabled", true);
-
-// запрос системного прокси занимает время
-user_pref("network.proxy.type", 0);
 
 // отключаем предварительные запросы, ибо нефиг
 user_pref("network.dns.disablePrefetch", true);
