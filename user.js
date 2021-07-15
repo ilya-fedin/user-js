@@ -20,14 +20,11 @@ user_pref("intl.locale.requested", "ru");
 // отключение запроса на about:config
 user_pref("browser.aboutConfig.showWarning", false);
 
-// WebRender
-user_pref("gfx.webrender.all", true);
-
 // включаем управление тачскрином (еще нужен MOZ_USE_XINPUT2=1 на линуксах)
 user_pref("dom.w3c_touch_events.enabled", 2);
 
 // масштаб интерфейса
-user_pref("layout.css.devPixelsPerPx", "1");
+//user_pref("layout.css.devPixelsPerPx", "1");
 //user_pref("layout.css.devPixelsPerPx", "1.25");
 user_pref("browser.uidensity", 1);
 
@@ -102,3 +99,6 @@ user_pref("network.tcp.tcp_fastopen_enable", true);
 user_pref("media.autoplay.default", 5);
 user_pref("media.autoplay.block-event.enabled", true);
 user_pref("media.autoplay.block-webaudio", true);
+
+// бесит, когда по отпусканию клавиши нажимается пункт меню
+user_pref("ui.context_menus.after_mouseup", true);
