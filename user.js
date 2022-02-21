@@ -8,6 +8,7 @@ user_pref("extensions.webextensions.remote", false);
 user_pref("dom.largeAllocationHeader.enabled", false);
 user_pref("layers.gpu-process.enabled", false);
 user_pref("dom.ipc.processCount", 1);
+user_pref("dom.ipc.keepProcessesAlive.privilegedabout", 0);
 
 // начиная с 3-го уровня сандбоксинга, запрещен доступ к локальным фалйам, потому используем 2-ой уровень, чтобы работало открытие локальынй файлов без отдельного процесса под file://
 // ни на что не влияет при выключенном сандбоксинге или e10s
