@@ -104,3 +104,6 @@ user_pref("media.autoplay.block-webaudio", true);
 
 // бесит, когда по отпусканию клавиши нажимается пункт меню
 user_pref("ui.context_menus.after_mouseup", true);
+
+// почему-то думает, что мои темы темные, пусть лучше систему слушается
+user_pref("layout.css.prefers-color-scheme.content-override", 2);
