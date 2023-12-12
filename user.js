@@ -63,12 +63,6 @@ user_pref("browser.newtabpage.activity-stream.prerender", false);
 user_pref("browser.newtabpage.activity-stream.telemetry", false);
 user_pref("browser.newtabpage.enabled", false);
 
-// до жути раздражающие запросы
-user_pref("dom.push.enabled", false);
-user_pref("dom.webnotifications.enabled", false);
-user_pref("geo.enabled", false);
-user_pref("media.navigator.enabled", false);
-
 // WebRTC в придачу
 user_pref("media.peerconnection.enabled", false);
 
@@ -104,6 +98,3 @@ user_pref("media.autoplay.block-webaudio", true);
 
 // бесит, когда по отпусканию клавиши нажимается пункт меню
 user_pref("ui.context_menus.after_mouseup", true);
-
-// почему-то думает, что мои темы темные, пусть лучше систему слушается
-user_pref("layout.css.prefers-color-scheme.content-override", 2);
