@@ -59,6 +59,7 @@ user_pref("browser.newtabpage.enabled", false);
 
 // до жути раздражающие запросы
 user_pref("permissions.default.geo", 2);
+user_pref("cookiebanners.service.mode.privateBrowsing", 1);
 
 // WebRTC в придачу
 user_pref("media.peerconnection.enabled", false);
@@ -76,6 +77,8 @@ user_pref("browser.safebrowsing.phishing.enabled", false);
 // повышаем приватность
 user_pref("privacy.donottrackheader.enabled", true);
 user_pref("privacy.trackingprotection.enabled", true);
+user_pref("privacy.globalprivacycontrol.enabled", true);
+user_pref("privacy.globalprivacycontrol.was_ever_enabled", true);
 
 // отключаем предварительные запросы, ибо нефиг
 user_pref("network.dns.disablePrefetch", true);
