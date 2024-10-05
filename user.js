@@ -4,7 +4,6 @@ user_pref("browser.tabs.remote.separateFileUriProcess", false);
 user_pref("browser.tabs.remote.separatePrivilegedContentProcess", false);
 user_pref("browser.tabs.remote.separatePrivilegedMozillaWebContentProcess", false);
 user_pref("network.process.enabled", false);
-user_pref("extensions.webextensions.remote", false);
 user_pref("layers.gpu-process.enabled", false);
 user_pref("dom.ipc.processCount", 1);
 user_pref("dom.ipc.keepProcessesAlive.privilegedabout", 0);
