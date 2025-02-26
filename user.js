@@ -63,9 +63,6 @@ user_pref("cookiebanners.service.mode.privateBrowsing", 1);
 // WebRTC в придачу
 user_pref("media.peerconnection.enabled", false);
 
-// нефиг чему попало в фоне работать и ресурсы расходовать
-user_pref("dom.serviceWorkers.enabled", false);
-
 // всякая телеметрия, просто чтобы не расходовало интернеты
 user_pref("datareporting.healthreport.uploadEnabled", false);
 user_pref("browser.safebrowsing.blockedURIs.enabled", false);
