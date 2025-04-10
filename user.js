@@ -43,18 +43,11 @@ user_pref("browser.discovery.enabled", false);
 user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.addons", false);
 user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.features", false);
 
+// реклама
+user_pref("browser.newtabpage.activity-stream.showSponsored", false);
+
 // мне ваш покет не нужен
 user_pref("extensions.pocket.enabled", false);
-
-// выключение предзагрузки содержимое дефолтной вкладки, а также выключение самой её
-// думаю, лучше юзать сторонние альтернативы, ибо то, что есть сейчас - жутко неудобно
-user_pref("browser.newtab.preload", false);
-user_pref("browser.newtabpage.activity-stream.feeds.snippets", false);
-user_pref("browser.newtabpage.activity-stream.feeds.telemetry", false);
-user_pref("browser.newtabpage.activity-stream.showSponsored", false);
-user_pref("browser.newtabpage.activity-stream.prerender", false);
-user_pref("browser.newtabpage.activity-stream.telemetry", false);
-user_pref("browser.newtabpage.enabled", false);
 
 // до жути раздражающие запросы
 user_pref("permissions.default.geo", 2);
@@ -69,6 +62,8 @@ user_pref("browser.safebrowsing.blockedURIs.enabled", false);
 user_pref("browser.safebrowsing.downloads.enabled", false);
 user_pref("browser.safebrowsing.malware.enabled", false);
 user_pref("browser.safebrowsing.phishing.enabled", false);
+user_pref("browser.newtabpage.activity-stream.feeds.telemetry", false);
+user_pref("browser.newtabpage.activity-stream.telemetry", false);
 
 // повышаем приватность
 user_pref("privacy.donottrackheader.enabled", true);
