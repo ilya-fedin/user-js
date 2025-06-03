@@ -45,6 +45,7 @@ user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.features", 
 
 // реклама
 user_pref("browser.newtabpage.activity-stream.showSponsored", false);
+user_pref("browser.newtabpage.activity-stream.showSponsoredTopSites, false);
 
 // мне ваш покет не нужен
 user_pref("extensions.pocket.enabled", false);
